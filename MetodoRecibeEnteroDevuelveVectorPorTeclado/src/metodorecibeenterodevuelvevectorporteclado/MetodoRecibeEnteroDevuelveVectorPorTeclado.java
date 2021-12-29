@@ -46,11 +46,11 @@ public class MetodoRecibeEnteroDevuelveVectorPorTeclado {
             try { //inicio del bloque try
                 Scanner sc = new Scanner(System.in);//variable para ingreso por teclado
                 numero = sc.nextInt();//adición del valor ingresado por teclado, con el método para números enteros
-                //cambio a false del validador, cierra el ciclo
+                
                 if(numero > 0){
-                    validador = false;
+                    validador = false;//cambio a false del validador, cierra el ciclo
                 } else {
-                    validador = true;
+                    validador = true;//genera una nueva ejecución al ciclo
                 }
             } catch (Exception e) {//inicio del bloque catch y adición de excepcion
                 validador = true; //cambio de true del validador, hace que el ciclo se repita
