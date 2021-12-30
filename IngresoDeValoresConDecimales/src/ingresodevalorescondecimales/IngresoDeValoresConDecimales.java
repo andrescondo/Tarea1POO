@@ -6,7 +6,6 @@ import java.util.Scanner;
  * una función que permita ingresar un valor real con dos decimales, y debe
  * devolver su equivalencia en texto
  *
- * https://www.lawebdelprogramador.com/foros/Java/1653056-VALIDAR-NUMEROS-DECIMALES.html
  *
  * @author Kevin Andres Condo Chaguay
  * @version POO - 2021
@@ -15,13 +14,16 @@ import java.util.Scanner;
 public class IngresoDeValoresConDecimales {
 
     public static void main(String[] args) {
+        //Declaración de variables 
         String numero = "";
         boolean hayPunto = false;
         int numeroDigitos = 0, posicionDelPunto = 0, numeroDeDecimales = 0;
         double numeroFinal = 0;
+        //=====================
+        
         System.out.println("Ingrese una nota con dos decimales");
-        Scanner sc = new Scanner(System.in);
-        numero = sc.next();
+        Scanner sc = new Scanner(System.in); //ingreso de datos por teclado
+        numero = sc.next(); //asignación de valor ingresado por teclado a una variable
 
         try {
             //validación de datos ingresados, en caso de error se cierra el programa
@@ -46,9 +48,7 @@ public class IngresoDeValoresConDecimales {
                     numeroFinal = Double.parseDouble(numero);
                             
 
-                    if(numeroFinal >= 0 && numeroFinal <= 10){
-                        System.out.println(numeroFinal);
-                        
+                    if(numeroFinal >= 0 && numeroFinal <= 10){                        
                         if(numeroFinal < 7){
                             System.out.println("Reprobado");
                         } else if(numeroFinal >= 7 && numeroFinal < 8){
