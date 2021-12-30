@@ -1,10 +1,9 @@
 package sumarvectoresinvertidospresentardatos;
-
 import java.util.Random;
 
 /**
- * Método que recibe un número entero y devuelve un vector del tamaño del
- * número, el número es ingresado por teclado
+ * Método que recibe un número entero para el tamaño del vector, genera numeros aleatorios, suma el primero en el orden 
+ * creado, y el segundo en orden invertido, los suma y luego los presenta en pantalla
  *
  * @author Kevin Andres Condo Chaguay
  * @version POO - 2021
