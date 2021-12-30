@@ -41,15 +41,26 @@ public class IngresoDeValoresConDecimales {
 
                 //validación de números decimales (sean solo 2) y que no tengan un punto al principio
                 if (posicionDelPunto == 0 || numeroDeDecimales > 2 || numeroDeDecimales < 2) {
-                    System.out.println("Ha ingresado un caracter invalido");
+                    System.out.println("Ha ingresado un dato invalido");
                 } else {
                     numeroFinal = Double.parseDouble(numero);
                             
-                    System.out.println(numeroFinal);
 
-//                    if(){
-//                        
-//                    }
+                    if(numeroFinal >= 0 && numeroFinal <= 10){
+                        System.out.println(numeroFinal);
+                        
+                        if(numeroFinal < 7){
+                            System.out.println("Reprobado");
+                        } else if(numeroFinal >= 7 && numeroFinal < 8){
+                            System.out.println("Aprobado - bueno");
+                        } else if(numeroFinal >=8 && numeroFinal < 9){
+                            System.out.println("Aprobado - muy bueno");
+                        } else if( numeroFinal > 9 ){
+                            System.out.println("Aprobado - sobresaliente");
+                        }
+                    } else {
+                        System.out.println("La cantidad se excede del limite permitido");
+                    }
                 }
 
                 //manejo de errores
